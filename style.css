@@ -1,0 +1,504 @@
+/**
+    The portfolio has been created using custom css rules.
+*/
+
+/*********** Style Common html tags  ************/ 
+
+/* Reset margins and padding for all elements*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic font and font-family styles*/
+html,
+body{
+    background-color: #fff;
+    color: #182153;
+    font-family: 'Lato', sans-serif;            
+}
+
+/* Set header tag sizes */
+h2{
+    font-size: 1.3em;
+}
+
+h3{
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+h4{
+    border-top: 1px solid #979797;
+    padding-top: 1em;
+    margin-top: 1em;
+    border-bottom: 1px solid #979797;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+h5{
+    font-size: 0.7em;
+}
+
+p{
+    line-height: 1.8em;
+    font-size: 0.8em;
+}
+
+/*************  Common Classes **************/
+
+/* provide space around content in each section. */
+section{
+    padding: 2em 0;
+}
+
+/* Title is given to each section and follows this common style */
+.title{
+    width: 100%;
+    border-bottom: 1px solid #979797;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+/* All content is placed inside row element. 
+    Space is provided on left and right of row content. 
+    The row has display set to flex and contained items are
+    arranged in a column. The direction will change to
+    row as screen size increases.*/
+.row{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Inside a row content can be placed inside one or two columns.
+    On small screens content in a column is left aligned. */
+.column{
+    margin-top: 1em;
+    text-align: left;
+}
+
+/* This class is used at some places to provide better spacing
+    where it improves readibility. */
+.spacer{
+    padding-top: 1em;
+}
+
+/* On small screens columns are stacked on top of each other.
+    This class is used to reduce the double margins caused by
+    vertical stacking.  */
+.col-stack-margin{
+    margin-top: 0;
+}
+
+/* Used to separate rows in section */
+.border-bottom{
+    border-bottom: 1px solid #979797;
+    padding-bottom: 1em;
+}
+
+/* Used in project section to display technologies used */
+.small-text{
+    font-size: 0.8em;
+}
+
+/************** Top Header **************/
+
+/* This class styles top nav for small screens. The links inside
+    the top-nav are stacked on top of each other using flexbox. 
+    Flex direction is changed to row for larger screens */
+.header-row{
+    line-height: 3em;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid #979797;
+}
+
+/* Use to show logo, hamburger icon and menu close icon in a row */
+.small-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* styling logo of the page */
+.logo{
+    padding: 10px 20px;
+    font-size: 1.2em;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #182153;
+}
+
+/* styling hamburger and menu close icon */
+.menu-icon,
+.menu-close-icon{
+    font-size: 1.4em;
+    line-height: 3em;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.menu-close-icon{
+    display: none;
+}
+
+/* Styling navigation links.
+    These occupy 100% of space on small screen */
+nav div{
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+nav div:first-child{
+    border-top: 1px solid #dbdbdb;
+}
+
+nav div:last-child{
+    border-bottom: none;
+}
+
+/* Remove underlining under anchor links,
+    display as block to occupy full length */
+nav a{
+    display: block;
+    text-decoration: none;
+    color: #182153;
+}
+
+/* Hightlight navigation links when mouse moves over them*/
+nav div:hover{
+    background-color: #182153;
+}
+
+nav div:hover a{
+    color: white;
+}
+
+/************** Hero Section **************/
+
+/* Set Background image, center it, resize image to cover full space*/
+.hero{
+    background-image: linear-gradient(rgba(24, 33, 83, 0.7), rgba(24, 33, 83, 0.7)), url("images/hero-img.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: 4em;
+}
+
+/* The callout inside hero section occupies full space,
+    this space reduces as the screen size increases  */
+.hero .callout{
+    padding: 1em 0.5em;
+    text-align: center;
+    background-color: #dbdbdb;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/************** Education Section **************/
+
+/* Change background colors of alternate sections, in this case
+    education section */
+.education{
+    background-color: #dbdbdb;
+}
+
+/************** Skills Section **************/
+
+/* Style Skills as a small tile */
+.skills .item{
+    display: flex;
+    justify-content: left;
+    background-color: #182153;
+    padding: 0.5em 0;
+    padding-left: 2em;
+    margin: 1em 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    color: rgb(230, 227, 227);
+}
+
+/* Remove margin below last item in each of the two columns 
+    as the columns are stacked and this causes extra space
+    between the stacked columns*/
+.skills .item:last-child{
+    margin-bottom: 0;
+}
+
+/* Provide space between skill icon and skill text */
+.skills img{
+    margin-right: 1em;
+}
+
+/************** Contact Section **************/
+
+/* Change background color of alternate sections */
+.contact{
+    background-color: #dbdbdb;
+}
+
+/* Styling form textboxes, setting height, padding and margins
+    They occupy the full screen space on small devices.
+    The sizes will reduce as screen size increases. */
+.contact input{
+    height: 2.5em;
+    width: 100%;
+    margin-bottom: 1em;
+    border-radius: 2px;
+    border: none;
+    padding: 5px;
+}
+
+/* This setting resets the margins of name and email textboxes.
+    This is required since on larger screens, both are placed
+    next to each other in a single row and there some margins
+    are introduced to provide some space.*/
+.contact input[id="name"]{
+    margin-right: 0;
+}
+
+.contact input[id="email"]{
+    margin-left: 0;
+}
+
+/* Set message box size to provide appropriate space
+    for user. */
+.contact textarea {
+    height: 8em;
+    width: 100%;
+    margin-bottom: 1em;
+    border: none;
+    font-size: 1.1em;
+    vertical-align: top;
+    padding: 5px;
+}
+
+.contact input[type="submit"]{
+    background-color: #182153;
+    color: white;
+}
+
+/* Style facebook, twitter and linkedin icons */
+.contact .social{
+    line-height: 3em;
+    border-top: 1px solid #979797;
+}
+
+.social a{
+    text-decoration: none;    
+    color: #182153;
+    margin-right: 15px;
+}
+
+.social a:hover{
+    color: white;
+}
+
+/************** Footer **************/
+
+footer{
+    padding: 1em 0;
+    font-size: 0.8em;
+    background-color: rgb(90, 89, 89);
+    color: rgb(214, 214, 214);
+}
+
+/**************** Projects Section *************/
+
+#projects p{
+    padding-top: 1em;
+    font-size: 0.9em;
+}
+
+#projects .small-text{
+    font-size: 0.75em;
+}
+
+
+@media only screen and (min-width : 500px){
+
+    /* Increase font sizes for common html tags as screen size increases */
+    h2{
+        font-size: 1.3em;
+    }
+  
+    h5{
+        font-size: 0.8em;
+    }
+
+    p{
+        font-size: 0.9em;
+    }
+
+    /* increase page margins on each side as screen size increases */
+    .row{
+        width: 80%;
+    }
+
+    /* Reduce the hero callout size as screen size increases */
+    .hero .callout{
+        width: 70%;
+    }
+
+    /* Reduce textbox sizes as screen sizes increases  */
+    .contact input[id="name"],
+    .contact input[id="email"]{
+        width: 49%;
+    }
+    
+    /* provide space between email and name textbox as they both
+        are displayed in a single row on large screens */
+    .contact input[id="name"]{
+        margin-right: 1%;
+    }
+    
+    .contact input[id="email"]{
+        margin-left: 1%;
+    }
+
+}
+
+
+@media only screen and (min-width : 746px) {
+
+    /* Further increase font size of html tags as screen size increases  */
+    h2{
+        font-size: 1.5em;
+    }
+
+    p{
+        font-size: 1em;
+        line-height: 2em;
+    }
+
+    /* The row contains content which is organized into columns.
+        On small screens the columns are stacked, hence flex 
+        direction is column, but on larger devices columns are 
+        arranged into a single row, hence the flex-direction
+        is changed to row */
+    .row{
+        flex-direction: row;
+    }
+
+    /* This layout assumes two columns on larger screens,
+        they each occupy 50% of screen */
+    .column{
+        width: 50%;
+        margin-top: 1em;
+    }
+
+    /* The left column has content aligned to right */
+    .column:first-child{
+        margin-right: 2em;
+        text-align: right;
+    }
+    
+    /* The right column has content aligned to left */
+    .column:last-child{
+        margin-left: 2em;
+        text-align: left;
+    }
+
+    /************* Navigation Section *************/
+
+    /* Reorient header navigation into a row */
+    .header-row{
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    /* Hide hamburger and close icons on large screen */
+    header i{
+        display: none !important;
+    }
+
+    /* Change the navigation items display from block to 
+        inline-block on large screens */
+    nav div{
+        border: 0 !important;
+        width: 8em;
+        display: inline-block !important;
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    /* Further reduce callout size as screen size increases  */
+    .hero .callout{
+        padding: 2em 1em;
+        width: 50%;
+    }
+
+    /* Change item display from flex to inline-flex to allow
+        the items to be aligned as prescribed in the parent column.
+        Also reduce the space occupied by skill item in larger screens */
+    .skills .item{
+        display: inline-flex;
+        justify-content: left;
+        padding-left: 2em;
+        width: 70%;
+    }
+
+    /**************Projects Section ***********/
+
+    /* Increase the margins between columns in project section and
+        re-align content in each to left */
+        #projects .column:first-child{
+            margin-right: 3em;
+            text-align: left;
+        }
+        
+        #projects .column:last-child{
+            margin-left: 3em;
+            text-align: left;
+        }
+    
+        /* Provide space below each project description list item */
+        #projects p{
+            padding-top: 1em;
+            font-size: 0.9em;
+        }
+    
+        #projects ul{
+            list-style-type: square;
+        }
+
+}
+
+
+@media only screen and (min-width : 840px) {
+
+    /* Increase logo font size on larger screens */
+    .logo{
+        font-size: 1.5em;
+    }
+
+    /* Increase font size of text in navigation links */
+    nav div{
+        font-size: 1em;
+    }
+
+}
+
+
+@media only screen and (min-width : 917px) {
+
+    /* Further reduce the skill item size on larger screens */
+    .skills .item{
+        width: 60%;
+    }
+}
+
+

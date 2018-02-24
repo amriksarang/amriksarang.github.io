@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/brands.css" rel="stylesheet">
+
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/fontawesome.css" rel="stylesheet">
+    
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/solid.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <title>Portfolio | Amrik Singh</title>
+
+</head>
+<body>
+
+    <!-- *******************Navigation Section ************** -->
+
+    <header>
+        <div class="header-row">
+            <div class="small-header">
+                <div class="logo"><a href="index.html">Amrik Singh</a></div>
+                <i class="fas fa-times menu-close-icon"></i>              
+                <i class="fas fa-bars menu-icon"></i>
+            </div>            
+            <nav>
+                <div><a href="index.html#experience">Experience</a></div>
+				<div><a href="#">Projects</a></div>
+                <div><a href="index.html#education">Education</a></div>
+                <div><a href="index.html#skills">Skills</a></div>
+                <div><a href="index.html#contact">Contact</a></div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- *******************Hero Section ************** -->
+
+    <section class="hero">
+        <div class="row">
+            <div class="callout">
+                <h2>Projects</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- *******************Projects Section ************** -->
+
+    <section id="projects" class="projects">                
+        <div class="row">
+            <div class="column">
+                <h4>Adobe AEM &amp; Ecommerce Integration Prototype</h4>
+                <ul>
+                <li><p>Designed and implemented prototype solution that demonstrated the integration of Adobe AEM's Ecommerce framework with Elasticpath Ecommerce software.</p></li><li><p>The solution used AEM Product Catalog tool to create Product Categories and hierarchy in AEM. The catalog was managed in Elasticpath and product page and media assets were managed in AEM.</p></li><li><p>The AEM ecommerce framework was configured to connect with Elasticpath. Then AEM APIs were used to request data from Elasticpath services.</p></li>
+                <p class="small-text">Technologies used:<br>Adobe AEM 6.0 CMS, OSGi, Java, JSP, JavaScript, Elastipath ECommerce Software</p>
+                </ul>
+            </div>
+            <div class="column">
+                <h4>Feature updates of various websites using AEM CMS</h4>
+                <ul>
+                <li><p>Created reusable CMS components and page templates such as headers, footers, content sections, extracting data from data stores and web services, searching content in AEM data sources, process online forms etc.</p></li> 
+                <li><p>The publishers can add these components to webpages using AEM GUI, author webpage data using Component's GUI, edit webpages directly on the website on dev servers, include DAM assets and publish content to production servers.</p></li><li><p>The components consisted of data capture forms created using EXT JS Javascript framework, JSPs to extract page data from AEM datastore and assemble pages from these components.</p></li><li><p>In addition some components also communicated with backend application containers using Java/Servlets/OSGi. The backend application written in Java managed operations and data on the basis of organization's Business logic</p></li></ul>
+                <p class="small-text">Technologies used:<br>Adobe AEM 6.0 CMS, OSGi, Java, JSP, JavaScript</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <h4>POC demonstrating use of Adode AEM Adaptive form application</h4>
+                <ul><li><p>Created an application that customized AEM Adaptive Forms so that website visitors can submit online requests by filling forms provided on an organization's website.</p></li><li><p>After the online forms were submitted a workflow was initiated in the backend system. The workflow published form data to AEM data stores.</p></li><li><p> The workflow also initiated an approval workflow for the organization's Administrators who could then view the user data and process it further and take decisions as per their organization's procedure.</p></li><li><p>The workflow also intimated the users about the progress of their requests. Adaptive forms facilitate creation of such an application</p></li></ul>
+                <p class="small-text">Technologies used:<br>
+                Adobe AEM 6.0 CMS, OSGi, Java, JSP, JavaScript</p>
+            </div>
+            <div class="column">
+                <h4>Created a prototype to migrate data from websites to AEM CMS.</h4>
+                <ul><li><p>Concieved, designed and implemented a solution to pull data from an existing website and store the data in a new AEM CMS based web application.</p></li><li><p>The website data included page content, media assets and files such as PDFs, Document files etc. The process of page text extraction was automated for a set of pages with similar text structures. Any files or digital content could also be retrieved by using a similar automated process.</p></li><li><p>An API was also created that could be implemented for other CMS also and provide same functionality.</p></li></ul>
+                <p class="small-text">Technologies used:<br>
+                Adobe AEM 6.0 CMS, OSGi, Java, JSP, JavaScript, Spring Framework, MySQL Database.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <h4>Created components and templates for websites using Interwoven Teamsite CMS</h4>
+                <ul><li><p>Designed and implemented several projects that used Interwoven Teamsite CMS to create, manage and publish their web content.</p></li><li><p> Created DCTs, TPLs for website components and templates. Created workflows using Teamsite Workflow Modeler and Teamsite Perl Library to automate processing and management of web data. </p></li><li><p>Integrated Translation APIs of external vendors to transfer content requiring translation to Vendor's system and then retrieving the translated content and inserting it into Teamsite CMS.</p></li><li><p>Created and configured content and database deployments of data in Teamsite Datastore or other sources using Interwoven's Open Deploy and DataDeploy software.</p></li><li><p>Wrote backend services using Perl to provide dynamic functionality in DCTs, Workflows and Deployments. </p></li></ul>
+                <p class="small-text">Technologies used:<br>Interwoven Teamsite, OpenDeploy, DataDeploy, Workflow Modeler, Perl, Java, Javascript.</p>
+            </div>
+            <div class="column">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- *******************Footer Section ************** -->
+
+    <footer>
+        <div class="row">
+                &copy; 2018 By Amrik Singh
+        </div>
+    </footer>
+
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
